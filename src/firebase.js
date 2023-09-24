@@ -14,13 +14,23 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const  apikey =import.meta.env.VITE_FIREBASE_API_KEY 
+const  auth =import.meta.env.VITE_FIREBASE_AUTH_DOMAIN
+const  projectid =import.meta.env.VITE_FIREBASE_PROJECT_ID
+const  storagebucket =import.meta.env.VITE_FIREBASE_STORAGE_BUCKET
+const  messagingSenderid =import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID
+const  appId =import.meta.env.VITE_FIREBASE_APP_ID
+
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyB5wSlyo6qEDZy_h7eZFEdL7CwO19YjLWo",
-  authDomain: "crucian-80f42.firebaseapp.com",
-  projectId: "crucian-80f42",
-  storageBucket: "crucian-80f42.appspot.com",
-  messagingSenderId: "264751544700",
-  appId: "1:264751544700:web:14cbef6ee78fe6fd568cf9",
+  apiKey: apikey,
+  authDomain:auth,
+  projectId: projectid,
+  storageBucket: storagebucket,
+  messagingSenderId:messagingSenderid,
+  appId:appId,
   measurementId: "G-901D7VLHYK"
 };
 

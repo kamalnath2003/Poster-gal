@@ -80,7 +80,7 @@ function Navigator() {
                 <a className="nav-link" href="#">
                   <img
                     className="me-3 pb-1"
-                    src="/img/vector.svg"
+                    src="/img/Vector.svg"
                   
                     alt=""
                   />
