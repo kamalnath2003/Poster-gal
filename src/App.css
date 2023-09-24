@@ -1,0 +1,343 @@
+
+
+.link-ter-gal {
+  color: #292F2F;
+  font-family: Playfair Display;
+  
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  
+  }
+  
+  
+    *{
+      font-family: Playfair Display;
+    }
+  
+  
+    @media only screen and (min-width:760px){
+      .center{
+
+  
+      }
+      
+      
+  }
+  
+  .hero{
+      background-color: rgba(213, 234, 236, 1);
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+     ;
+  }
+  
+  .pos{
+  
+  
+  }
+  
+  .style-your-walls{
+  
+  color: #292F2F;
+  font-family: Playfair Display;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px; /* 100% */
+  }
+  
+  
+  .shopnow{
+      width: 140px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #F8A888;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 20px;
+  
+  
+  }
+  
+  .collect{
+      color: #292F2F;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.6px; /* 143% */
+  letter-spacing: 1.3px;
+  }
+  
+  .contain{
+    margin-top: 100px;
+  }
+  .background{
+    background-image: url(./images/back.png);
+    margin: 100px;
+  
+  background-repeat: no-repeat;
+  
+  
+  }
+  @media only screen and (max-width: 600px) {
+    .background {
+      min-width: 100%;
+      margin: 0px;
+      
+    }
+  
+  }
+  .background div{
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px; /* 130% */
+  }
+  .backdiv{
+   width: 60%;
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px; /* 130% */
+  }
+  
+  @media only screen and (min-width:768px){
+    .backdiv{
+      width: 40%;
+    }
+  }
+  .cyanbutton{
+    background-color: #CCEAEA;
+   
+  
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .cyanbutton{
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+  
+    }
+  
+  }
+  .cyanbutton p{
+    font-size:12px ;
+  
+  }
+  .transp{
+    z-index: -1 ;
+    padding-left: 50px;
+    padding-top:50px;
+  
+  
+  }
+  .back{
+  
+  
+  
+  
+  }
+  @media  screen and (max-width:768px) {
+    .transp{
+      width: 75%;
+  
+      
+  
+    }
+    .back{
+      width: 100%;
+  
+  
+    }
+    .pos{
+      margin-left: 10%;
+    }
+    
+  }
+  .fresh{
+    color: #292F2F;
+  font-family: Playfair Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66px; /* 110% */
+  }
+  .thissummer{
+    color: #292F2F;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  }
+  .para{
+    color: #292F2F;
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.2px; /* 170% */
+  }
+  .tropic{
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  
+  
+  }
+  
+  .shopnow2{
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.8px; /* 130% */
+  }
+  .box{
+    background-color: #CCEAEA;
+    margin: 100px;
+  
+  height: 686px;
+  min-height: 686px;
+  }
+  .big{
+    margin-top: 100px;
+  }
+  .textbox{
+  
+    padding-bottom: 20px;
+  }
+  
+  .box1{
+  
+    margin: 100px;
+  min-height: 400px;
+  bottom: 45%;
+  border: 3px solid #222225;
+  position: relative;
+  
+  }
+  @media only screen and (max-width:768px){
+    .box1{
+      position: static;
+      width: 120%
+    }
+  }
+  
+  .box2{
+    border: 3px solid black;
+    margin: 100px;
+    position: relative;
+    top: 25%;
+  
+  
+  }
+  .bigbox{
+    margin-bottom: 15%;
+  }
+  .position{
+  
+    position: relative;
+    bottom:300px ;
+  }
+  .postergal{
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  }
+  .subscribe{
+    color: #292F2F;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .footer{
+  
+    margin-left: 50%;
+    margin-right: 50%;
+    
+  
+  }
+  .footer input{
+    height: 30px;
+    width: 1000px;
+  
+  }
+  .o{
+    font-size:24px ; border-bottom: 2px solid black;
+  }
+  .subs p{
+    background-color: #F8A888;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #2F2E2E;
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  
+  }
+  .subs input{
+    width: 25%;
+    height: 30px;
+  
+  
+  
+    border: 1 px solid black ;
+  }
+  .subs{
+  justify-content: center;
+  }
+  
+  .footerbox{
+    margin-top: 30px;
+  }
+  .mobile{
+    fill: linear-gradient(358deg, #47474C 2.43%, #222225 112.85%);
+  stroke-width: 4.568px;
+  stroke: rgba(0, 0, 0, 0.03);
+  
+  }
+  
+  

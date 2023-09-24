@@ -1,0 +1,35 @@
+.hello{
+    color: #292F2F;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+.myname{
+    color: #292F2F;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+.para{
+    color: #292F2F;
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px; /* 170% */
+}
+.columnbg{
+    background-color: #cceaea;
+}
+.parawrap{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 50%;
+    margin-bottom: 10%;
+}
