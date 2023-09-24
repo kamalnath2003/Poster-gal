@@ -7,7 +7,7 @@ function Home() {
             <div className="container-fluid">
       <div className="row pe-0">
         <div className="col-md-6 col-12 px-0">
-          <img className="w-100" src="/public/img/wow.png" alt="" />
+          <img className="w-100" src="/img/wow.png" alt="" />
         </div>
         <div className="col-md-6 col-12 hero">
           <div className="ms-5">
@@ -60,10 +60,10 @@ function Home() {
           <div className="col-12 col-md-6">
             <div className="pos">
               <div className="transp position-absolute">
-                <img className="w-100" src="/public/img/leaf.png" alt="" />
+                <img className="w-100" src="/img/leaf.png" alt="" />
               </div>
               <div className="back">
-                <img className="w-75" src="/public/img/transparent.png" alt="" />
+                <img className="w-75" src="/img/transparent.png" alt="" />
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ function Home() {
           <div className="col-12 col-md-6 d-flex">
             <div className="box">
               <div>
-                <img className="w-100" src="/public/img/galleries.png" alt="" />
+                <img className="w-100" src="/img/galleries.png" alt="" />
               </div>
               <div className="textbox">
                 <p className="tropic">TROPICAL COLLECTION</p>
@@ -84,7 +84,7 @@ function Home() {
           <div className="big col-12 col-md-6 d-flex" style={{ marginTop: '25%' }}>
             <div className="box" style={{ backgroundColor: '#F5E5D6' }}>
               <div>
-                <img className="w-100" src="/public/img/gallery2.png" alt="" />
+                <img className="w-100" src="/img/gallery2.png" alt="" />
                 <div className="textbox">
                   <p className="tropic">TROPICAL COLLECTION</p>
                   <p className="shopnow2">SHOP NOW</p>
@@ -98,7 +98,7 @@ function Home() {
           <div className="col-6">
             <div className="box1">
               <div>
-                <img className="w-100" src="/public/img/gallery3.png" alt="" />
+                <img className="w-100" src="/img/gallery3.png" alt="" />
                 <div className="textbox">
                   <p className="tropic">TROPICAL COLLECTION</p>
                   <p className="shopnow2">SHOP NOW</p>
@@ -116,10 +116,10 @@ function Home() {
           </div>
           <div className="row">
             <div className="col px-0">
-              <img className="w-100" src="/public/img/poster.png" alt="" />
+              <img className="w-100" src="/img/poster.png" alt="" />
             </div>
             <div className="col px-0">
-              <img src="/public/img/poster2.png" alt="" className="w-100" />
+              <img src="/img/poster2.png" alt="" className="w-100" />
             </div>
             <div className="col px-0"></div>
             <div className="col px-0"></div>

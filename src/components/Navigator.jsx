@@ -60,7 +60,7 @@ function Navigator() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <a className="nav-link" >
                 <Link className='text-decoration-none text-dark' to='/contact'>
                   Contact
                 </Link>
