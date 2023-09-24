@@ -70,7 +70,7 @@ function Navigator() {
                 <a className="nav-link" href="/login" style={{color:' #FCB08C'}}>
                   <img
                     className="me-3 pb-1"
-                    src="/public/img/icon.svg"
+                    src="/img/icon.svg"
                     alt=""
                   />
                   Login
@@ -80,7 +80,7 @@ function Navigator() {
                 <a className="nav-link" href="#">
                   <img
                     className="me-3 pb-1"
-                    src="/public/img/vector.svg"
+                    src="/img/vector.svg"
                   
                     alt=""
                   />
