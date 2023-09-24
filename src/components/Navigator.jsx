@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function Navigator() {
   return (
@@ -10,6 +11,8 @@ function Navigator() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <a className="navbar-brand m" href="index.html">
+          <Link className='text-decoration-none text-dark' to='/'>
+               
             <div className="link-ter-gal d-flex">
               P
               <p className="o" >
@@ -17,6 +20,7 @@ function Navigator() {
               </p>
               STER GAL
             </div>
+                </Link>
           </a>
           <button
             className="navbar-toggler"
@@ -35,24 +39,31 @@ function Navigator() {
                 <a
                   className="nav-link buttons"
                   aria-current="page"
-                  href="/"
-                >
+              
+                ><Link className='text-decoration-none text-dark' to='/'>
                   Home
+                </Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/shop">
+                <a className="nav-link active " >
+                <Link className='text-decoration-none text-dark' to='/shop'>
                   Shop
+                </Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <a className="nav-link" >
+                <Link className='text-decoration-none text-dark' to='/about'>
                   About
+                </Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contact">
+                <Link className='text-decoration-none text-dark' to='/contact'>
                   Contact
+                </Link>
                 </a>
               </li>
               <li className="nav-item ms-2">
