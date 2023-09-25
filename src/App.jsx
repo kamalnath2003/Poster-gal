@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import{BrowserRouter,Routes,Route} from 'react-router-dom'
 import './App.css'
 import Navigator from './components/Navigator'
@@ -10,6 +10,7 @@ import About from './pages/About'
 
 import Organiser from './pages/Organiser'
 import Shoptest from './pages/Shoptest'
+import axios from 'axios'
 
 
 function App() { 
