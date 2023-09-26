@@ -67,7 +67,7 @@ function Navigator() {
                 </a>
               </li>
               <li className="nav-item ms-2">
-                <a className="nav-link" href="/login" style={{color:' #FCB08C'}}>
+                <a className="nav-link" href="/login" style={{color:'#FCB08C'}}>
                   <img
                     className="me-3 pb-1"
                     src="/img/icon.svg"
