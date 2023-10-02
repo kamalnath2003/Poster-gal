@@ -3,15 +3,20 @@ import { Link, useNavigate } from 'react-router-dom'
 import { collection, doc, onSnapshot } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import './Shop.css'
+import { data } from 'autoprefixer';
 function Shop() {
     const [images, setimages] = useState([])
     const nav = useNavigate();
+
+
+    
     useEffect(()=>{
         const unsub = onSnapshot(collection(db,'imageInfo'), (snapshot)=>{
             let list = [];
             snapshot.docs.forEach((doc)=>{
                 list.push({id:doc.id,...doc.data()})
             });
+
             setimages(list);
             console.log(images)
            
@@ -67,15 +72,15 @@ function Shop() {
               <div className="row">
 
 
-                    {images && images.map((items)=>(
+                    {images && images.map((item)=>(
                       
-                      <div className="col-6 col-md-4 mb-5"key={items.id}>
+                      <div className="col-6 col-md-4 mb-5"key={item.id}>
                       <div>
-                        <Link style={{textDecoration:'none'}} to={`/item/${items.id}`}>
-                        <img className="w-100" src={items.img} alt="" />
-                        <p className="pname">{items.name}</p>
+                        <Link style={{textDecoration:'none'}} to={`/item/${item.id}`}>
+                        <img className="w-100" src={item.img} alt="" />
+                        <p className="pname">{item.name}</p>
                         <div className="separate"></div>
-                        <p className="price">{items.price}</p>
+                        <p className="price">{item.price}</p>
                       </Link>
                       </div>
                     </div>

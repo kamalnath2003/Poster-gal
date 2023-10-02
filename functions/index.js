@@ -9,7 +9,8 @@
 
 const {onRequest} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
-
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
 
 const functions = require('firebase-functions');
 const express = require('express');
@@ -24,6 +25,9 @@ app.get('/api/someendpoint', (req, res) => {
 });
 
 // Deploy Express app as a Firebase Function
+export const storage = getStorage(app);
+export const db = getFirestore(app);
+
 exports.api = functions.https.onRequest(app);
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started

@@ -1,12 +1,5 @@
-import {
-  getDownloadURL,
-  listAll,
-  ref,
-  uploadBytes,
-  uploadBytesResumable,
-} from "firebase/storage";
+import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
 import "./tailwind.css";
-
 
 import React from "react";
 import { useEffect } from "react";
@@ -23,14 +16,15 @@ const initialState = {
 
 const Organiser = () => {
   const [data, setdata] = useState(initialState);
+
   const { name, price } = data;
 
   const [file, setfile] = useState(null);
-  const [progress, setprogress] = useState(null);
-  const [err, seterr] = useState({});
-  const [isSubmit, setisSubmit] = useState(false);
-  const nav = useNavigate();
-  const param = useParams();
+  // const [progress, setprogress] = useState(null);
+  // const [err, seterr] = useState({});
+  // const [isSubmit, setisSubmit] = useState(false);
+  // const nav = useNavigate();
+  // const param = useParams();
   // useEffect(() => {
   //   const uploadFile = () => {
   //     const name = new Date().getTime() + file.name;
@@ -64,7 +58,7 @@ const Organiser = () => {
   useEffect(() => {
     const upload = () => {
       const imageListRef = ref(storage, `images/`);
-      const name = new Date().getTime() + file.name;
+      // const name = new Date().getTime() + file.name;
       const storageRef = ref(storage, `images/${file.name}`);
       const uploadTask = uploadBytes(storageRef, file);
 
@@ -81,23 +75,31 @@ const Organiser = () => {
 
   const handlechange = (e) => {
     setdata({ ...data, [e.target.name]: e.target.value });
+    console.log(data);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setisSubmit(true);
+
     await addDoc(collection(db, "imageInfo"), {
       ...data,
       timestamp: serverTimestamp(),
     });
-    alert('uploaded')
-
+    alert("uploaded");
 
     console.log(data);
   };
 
   return (
     <div>
+      <button
+        onClick={() => {
+          setvalue(4);
+          console.log(value);
+        }}
+      >
+        press
+      </button>
 
       {/* {isSubmit ? (
         <>
@@ -105,63 +107,62 @@ const Organiser = () => {
         </>
       ) : ( */}
       <>
-      <div className="container">
-        <div className="boxa text-center">
-          <h1>Upload Your Art</h1>
+        <div className="container">
+          <div className="boxa text-center">
+            <h1>Upload Your Art</h1>
 
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col">
-              <div class="form-outline mb-4">
-                <input
-                  type="text"
-                  name="name"
-                  onChange={handlechange}
-                  value={name}
-                  id="form6Example4"
-                  placeholder="Name"
-                  class="form-control"
-                />
-                <label class="form-label" for="form6Example4">
-                  Art name
-                </label>
-              </div>{" "}
-              <div class="form-outline mb-4">
-                <input
-                  type="name"
-                  id="form6Example5"
-                  name="price"
-                  onChange={handlechange}
-                  value={price}
-                  placeholder="price"
-                  class="form-control"
-                />
-                <label class="form-label" for="form6Example5">
-                  Art price
-                </label>
+            <form onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col">
+                  <div class="form-outline mb-4">
+                    <input
+                      type="text"
+                      name="name"
+                      onChange={handlechange}
+                      value={name}
+                      id="form6Example4"
+                      placeholder="Name"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form6Example4">
+                      Art name
+                    </label>
+                  </div>{" "}
+                  <div class="form-outline mb-4">
+                    <input
+                      type="name"
+                      id="form6Example5"
+                      name="price"
+                      onChange={handlechange}
+                      value={price}
+                      placeholder="price"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form6Example5">
+                      Art price
+                    </label>
+                  </div>
+                  <label class="form-label" for="customFile">
+                    Default file input example
+                  </label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="customFile"
+                    label="image"
+                    name="image"
+                    onChange={(e) => {
+                      setfile(e.target.files[0]);
+                    }}
+                  />
+                  <button type="submit" class="btn btn-primary btn-block my-4">
+                    Upload
+                  </button>
+                </div>
               </div>
-              <label class="form-label" for="customFile">
-                Default file input example
-              </label>
-              <input
-                type="file"
-                class="form-control"
-                id="customFile"
-                label="image"
-                name="image"
-                onChange={(e) => {
-                  setfile(e.target.files[0]);
-                }}
-              />
-             <button type="submit" class="btn btn-primary btn-block my-4">
-          Upload
-        </button>
-            </div>
+            </form>
           </div>
-        </form>
         </div>
-
-      </div>
       </>
       {/* )} */}
     </div>
